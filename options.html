@@ -6,6 +6,8 @@
     <title>Hjem Rum - Options</title>
     <link rel="stylesheet" href="assets/style.css" />
     
+    <script defer src="assets/search.js"></script>
+    
   </head>
   <body>
     <div class="container">
@@ -17,8 +19,15 @@
           <ul>
             <li class="active"><a href="options.html">Options</a></li>
             
+            <li><a href="search.html">Search</a></li>
+            
           </ul>
         </nav>
+        
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search..." />
+          <div id="search-results" class="search-results"></div>
+        </div>
         
       </header>
 
@@ -38,6 +47,7 @@
             <h2>Documents</h2>
             <ul>
               <li><a href="index.html">Home</a></li>
+<li><a href="search.html">Search</a></li>
 
             </ul>
           </div>
@@ -718,6 +728,14 @@
         <main class="content">
           <h1>Hjem Rum Options</h1>
 
+          
+          <div class="search-form">
+            <input
+              type="text"
+              id="options-filter"
+              placeholder="Filter options..."
+            />
+          </div>
           
 
           <div class="options-container"><div class="option" id="option-_module-args">
