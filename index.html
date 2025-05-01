@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Hjem Rum - Options</title>
     <link rel="stylesheet" href="assets/style.css" />
-    
-    <script defer src="assets/search.js"></script>
     
   </head>
   <body>
@@ -17,17 +15,10 @@
         </div>
         <nav class="header-nav">
           <ul>
-            <li ><a href="options.html">Options</a></li>
-            
-            <li><a href="search.html">Search</a></li>
+            <li class="active"><a href="options.html">Options</a></li>
             
           </ul>
         </nav>
-        
-        <div class="search-container">
-          <input type="text" id="search-input" placeholder="Search..." />
-          <div id="search-results" class="search-results"></div>
-        </div>
         
       </header>
 
@@ -46,8 +37,7 @@
           <div class="docs-nav">
             <h2>Documents</h2>
             <ul>
-              <li><a href="index.html">Home</a></li>
-<li><a href="search.html">Search</a></li>
+              <li><a href="options.html">Module Options</a></li>
 
             </ul>
           </div>
@@ -55,21 +45,2040 @@
           <div class="toc">
             <h2>Contents</h2>
             <ul class="toc-list">
-              <li><a href="#home">Home</a></li>
-            </ul>
+  
+  
+
+  
+  
+  <li>
+    <details class="toc-category">
+      <summary title="rum.misc">
+        <span>rum.misc</span>
+        <span class="toc-count">6</span>
+      </summary>
+      <ul>
+        
+
+        
+        <li>
+          <a href="#option-rum-misc-gtk-bookmarks" title="rum.misc.gtk.bookmarks">
+            gtk.bookmarks
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-misc-gtk-css-gtk3" title="rum.misc.gtk.css.gtk3">
+            gtk.css.gtk3
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-misc-gtk-css-gtk4" title="rum.misc.gtk.css.gtk4">
+            gtk.css.gtk4
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-misc-gtk-enable" title="rum.misc.gtk.enable">
+            gtk.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-misc-gtk-packages" title="rum.misc.gtk.packages">
+            gtk.packages
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-misc-gtk-settings" title="rum.misc.gtk.settings">
+            gtk.settings
+            
+            
+          </a>
+        </li>
+        
+      </ul>
+    </details>
+  </li>
+  
+  <li>
+    <details class="toc-category">
+      <summary title="rum.programs">
+        <span>rum.programs</span>
+        <span class="toc-count">72</span>
+      </summary>
+      <ul>
+        
+
+        
+        <li>
+          <a href="#option-rum-programs-alacritty-enable" title="rum.programs.alacritty.enable">
+            alacritty.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-alacritty-package" title="rum.programs.alacritty.package">
+            alacritty.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-alacritty-settings" title="rum.programs.alacritty.settings">
+            alacritty.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-foot-enable" title="rum.programs.foot.enable">
+            foot.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-foot-package" title="rum.programs.foot.package">
+            foot.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-foot-settings" title="rum.programs.foot.settings">
+            foot.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-fuzzel-enable" title="rum.programs.fuzzel.enable">
+            fuzzel.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-fuzzel-package" title="rum.programs.fuzzel.package">
+            fuzzel.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-fuzzel-settings" title="rum.programs.fuzzel.settings">
+            fuzzel.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ghostty-enable" title="rum.programs.ghostty.enable">
+            ghostty.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ghostty-package" title="rum.programs.ghostty.package">
+            ghostty.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ghostty-settings" title="rum.programs.ghostty.settings">
+            ghostty.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ghostty-themes" title="rum.programs.ghostty.themes">
+            ghostty.themes
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-git-destination" title="rum.programs.git.destination">
+            git.destination
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-git-enable" title="rum.programs.git.enable">
+            git.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-git-package" title="rum.programs.git.package">
+            git.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-git-settings" title="rum.programs.git.settings">
+            git.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-helix-enable" title="rum.programs.helix.enable">
+            helix.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-helix-languages" title="rum.programs.helix.languages">
+            helix.languages
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-helix-package" title="rum.programs.helix.package">
+            helix.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-helix-settings" title="rum.programs.helix.settings">
+            helix.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-helix-themes" title="rum.programs.helix.themes">
+            helix.themes
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprland-enable" title="rum.programs.hyprland.enable">
+            hyprland.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprland-extraConfig" title="rum.programs.hyprland.extraConfig">
+            hyprland.extraConfig
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprland-importantPrefixes" title="rum.programs.hyprland.importantPrefixes">
+            hyprland.importantPrefixes
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprland-plugins" title="rum.programs.hyprland.plugins">
+            hyprland.plugins
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprland-settings" title="rum.programs.hyprland.settings">
+            hyprland.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprlock-enable" title="rum.programs.hyprlock.enable">
+            hyprlock.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprlock-package" title="rum.programs.hyprlock.package">
+            hyprlock.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-hyprlock-settings" title="rum.programs.hyprlock.settings">
+            hyprlock.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-keepassxc-enable" title="rum.programs.keepassxc.enable">
+            keepassxc.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-keepassxc-package" title="rum.programs.keepassxc.package">
+            keepassxc.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-keepassxc-settings" title="rum.programs.keepassxc.settings">
+            keepassxc.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-lsd-colors" title="rum.programs.lsd.colors">
+            lsd.colors
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-lsd-enable" title="rum.programs.lsd.enable">
+            lsd.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-lsd-icons" title="rum.programs.lsd.icons">
+            lsd.icons
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-lsd-package" title="rum.programs.lsd.package">
+            lsd.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-lsd-settings" title="rum.programs.lsd.settings">
+            lsd.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-bindings" title="rum.programs.ncmpcpp.bindings">
+            ncmpcpp.bindings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-actions" title="rum.programs.ncmpcpp.bindings.&lt;name&gt;.*.actions">
+            ncmpcpp.bindings.&lt;name&gt;.*.actions
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-binding" title="rum.programs.ncmpcpp.bindings.&lt;name&gt;.*.binding">
+            ncmpcpp.bindings.&lt;name&gt;.*.binding
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-deferred" title="rum.programs.ncmpcpp.bindings.&lt;name&gt;.*.deferred">
+            ncmpcpp.bindings.&lt;name&gt;.*.deferred
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-enable" title="rum.programs.ncmpcpp.enable">
+            ncmpcpp.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-package" title="rum.programs.ncmpcpp.package">
+            ncmpcpp.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-ncmpcpp-settings" title="rum.programs.ncmpcpp.settings">
+            ncmpcpp.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-obs-studio-enable" title="rum.programs.obs-studio.enable">
+            obs-studio.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-obs-studio-package" title="rum.programs.obs-studio.package">
+            obs-studio.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-obs-studio-plugins" title="rum.programs.obs-studio.plugins">
+            obs-studio.plugins
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-spotify-player-enable" title="rum.programs.spotify-player.enable">
+            spotify-player.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-spotify-player-keymap" title="rum.programs.spotify-player.keymap">
+            spotify-player.keymap
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-spotify-player-package" title="rum.programs.spotify-player.package">
+            spotify-player.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-spotify-player-settings" title="rum.programs.spotify-player.settings">
+            spotify-player.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-spotify-player-themes" title="rum.programs.spotify-player.themes">
+            spotify-player.themes
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-starship-enable" title="rum.programs.starship.enable">
+            starship.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-starship-package" title="rum.programs.starship.package">
+            starship.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-starship-settings" title="rum.programs.starship.settings">
+            starship.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-tofi-enable" title="rum.programs.tofi.enable">
+            tofi.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-tofi-package" title="rum.programs.tofi.package">
+            tofi.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-tofi-settings" title="rum.programs.tofi.settings">
+            tofi.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-vscode-enable" title="rum.programs.vscode.enable">
+            vscode.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-vscode-package" title="rum.programs.vscode.package">
+            vscode.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-vscode-settings" title="rum.programs.vscode.settings">
+            vscode.settings
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-enable" title="rum.programs.zsh.enable">
+            zsh.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-initConfig" title="rum.programs.zsh.initConfig">
+            zsh.initConfig
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-integrations-starship-enable" title="rum.programs.zsh.integrations.starship.enable">
+            zsh.integrations.starship.enable
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-loginConfig" title="rum.programs.zsh.loginConfig">
+            zsh.loginConfig
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-logoutConfig" title="rum.programs.zsh.logoutConfig">
+            zsh.logoutConfig
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-package" title="rum.programs.zsh.package">
+            zsh.package
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-plugins" title="rum.programs.zsh.plugins">
+            zsh.plugins
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-plugins-&lt;name&gt;-completions" title="rum.programs.zsh.plugins.&lt;name&gt;.completions">
+            zsh.plugins.&lt;name&gt;.completions
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-plugins-&lt;name&gt;-config" title="rum.programs.zsh.plugins.&lt;name&gt;.config">
+            zsh.plugins.&lt;name&gt;.config
+            
+            
+          </a>
+        </li>
+        
+        <li>
+          <a href="#option-rum-programs-zsh-plugins-&lt;name&gt;-source" title="rum.programs.zsh.plugins.&lt;name&gt;.source">
+            zsh.plugins.&lt;name&gt;.source
+            
+            
+          </a>
+        </li>
+        
+      </ul>
+    </details>
+  </li>
+  
+</ul>
+
           </div>
         </nav>
 
         <main class="content">
-          <h1>Home</h1>
-<p>Based on the Hjem tooling, Hjem Rum (literally meaning “home rooms”) is a
-collection of modules for various programs and services to simplify the use of
-Hjem for managing your <code>$HOME</code> files.</p>
-<p>Hjem was initially created as an improved implementation of the home
-functionality that Home Manager provides. Its purpose was minimal. Hjem Rum’s
-purpose is to create a module collection based on that tooling in order to
-recreate the functionality that Home Manager’s large collection of modules
-provides, allowing you to simply install and config a program.</p>
+          <h1>Hjem Rum Options</h1>
+
+          
+
+          <div class="options-container"><div class="option" id="option-rum-misc-gtk-bookmarks">
+  <h3 class="option-name">
+    <a href="#option-rum-misc-gtk-bookmarks" class="option-anchor">rum.misc.gtk.bookmarks</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of string</code></div>
+  <div class="option-description"><p>Bookmarks used by GTK file managers (ex. Nautilus).
+Each entry should have one of the following formats:</p>
+<ul>
+<li><code>[uri]</code></li>
+<li><code>[uri] &amp;lt;display name&amp;gt;</code></li>
+</ul>
+</div>
+  <div class="option-default">Default: <code>[ ]</code></div>
+  <div class="option-example">Example: <pre><code>[
+  "file:///home/user/Documents Documents"
+  "file:///home/user/Music Music"
+  "file:///home/user/Pictures Pictures"
+  "file:///home/user/Videos Videos"
+  "file:///home/user/Downloads Downloads"
+]</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-misc-gtk-css-gtk3">
+  <h3 class="option-name">
+    <a href="#option-rum-misc-gtk-css-gtk3" class="option-anchor">rum.misc.gtk.css.gtk3</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>CSS to be written to <code class="file-path">$HOME/.config/gtk-3.0/gtk.css</code>.
+You can either use this as lines or you can reference
+a CSS file from your theme’s package (or both).</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-misc-gtk-css-gtk4">
+  <h3 class="option-name">
+    <a href="#option-rum-misc-gtk-css-gtk4" class="option-anchor">rum.misc.gtk.css.gtk4</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>CSS to be written to <code class="file-path">$HOME/.config/gtk-4.0/gtk.css</code>.
+You can either use this as lines or you can reference
+a CSS file from your theme’s package (or both).</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-misc-gtk-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-misc-gtk-enable" class="option-anchor">rum.misc.gtk.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable GTK configuration.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-misc-gtk-packages">
+  <h3 class="option-name">
+    <a href="#option-rum-misc-gtk-packages" class="option-anchor">rum.misc.gtk.packages</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of package</code></div>
+  <div class="option-description"><p>The list of packages to be installed for gtk themes.
+This list should consist of any packages that will be used
+by your GTK theme(s).</p>
+</div>
+  <div class="option-default">Default: <code>[ ]</code></div>
+  <div class="option-example">Example: <pre><code>[
+  <derivation catppuccin-papirus-folders-unstable-2023-08-02>
+  <derivation bibata-cursors-2.0.7>
+]</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-misc-gtk-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-misc-gtk-settings" class="option-anchor">rum.misc.gtk.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of (boolean or signed integer or floating point number or string)</code></div>
+  <div class="option-description"><p>The settings that will be written to the various gtk files
+to configure the GTK theme. GTK documentation is perhaps
+nebulous, but the Arch Wiki entry and the <a href="https://docs.gtk.org/gtk3/class.Settings.html">official GTK
+documentation</a>
+are decent places to start.</p>
+<p>Please note that each option name will have “gtk-” prepended
+to it, so there is no need to include that on every single option.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  application-prefer-dark-theme = true;
+  font-name = "Sans 11";
+  theme-name = "Arc-Dark";
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/misc/gtk.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-alacritty-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-alacritty-enable" class="option-anchor">rum.programs.alacritty.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable Alacritty.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/alacritty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/alacritty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-alacritty-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-alacritty-package" class="option-anchor">rum.programs.alacritty.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The alacritty package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.alacritty</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/alacritty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/alacritty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-alacritty-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-alacritty-settings" class="option-anchor">rum.programs.alacritty.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>TOML value</code></div>
+  <div class="option-description"><p>The configuration converted into TOML and written to
+<code class="file-path">$HOME/.config/alacritty/alacritty.toml</code>.
+Please reference <a href="https://alacritty.org/config-alacritty.html">Alacritty’s documentation</a>
+for config options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  window = {
+    dimensions = {
+      columns = 101;
+      lines = 28;
+    };
+    padding = {
+      x = 6;
+      y = 3;
+    };
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/alacritty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/alacritty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-foot-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-foot-enable" class="option-anchor">rum.programs.foot.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable foot.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/foot.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/foot.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-foot-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-foot-package" class="option-anchor">rum.programs.foot.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The foot package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.foot</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/foot.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/foot.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-foot-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-foot-settings" class="option-anchor">rum.programs.foot.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))</code></div>
+  <div class="option-description"><p>Settings are written as an INI file to <code class="file-path">$HOME/.config/foot/foot.ini</code>.</p>
+<p>Refer to <span class="manpage-reference">foot.ini(5)</span> or the <a href="https://github.com/aome510/spotify-player/blob/master/docs/config.md#themes">upstream template</a>
+for all available options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  colors = {
+    alpha = 0.8;
+  };
+  main = {
+    font = "NotoSansM Nerd Font Mono:size=13";
+    term = "xterm-256color";
+  };
+  mouse = {
+    hide-when-typing = "yes";
+  };
+  scrollback = {
+    indicator-position = "none";
+    lines = 90000;
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/foot.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/foot.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-fuzzel-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-fuzzel-enable" class="option-anchor">rum.programs.fuzzel.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable fuzzel.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/fuzzel.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/fuzzel.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-fuzzel-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-fuzzel-package" class="option-anchor">rum.programs.fuzzel.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The fuzzel package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.fuzzel</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/fuzzel.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/fuzzel.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-fuzzel-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-fuzzel-settings" class="option-anchor">rum.programs.fuzzel.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))</code></div>
+  <div class="option-description"><p>Is written to <code class="file-path">$HOME/fuzzel/fuzzel.ini</code>.</p>
+<p>Please reference <span class="manpage-reference">fuzzel.ini(5)</span> for configuration options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  colors = {
+    background = "ffffffff";
+  };
+  main = {
+    layer = "overlay";
+    terminal = "foot";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/fuzzel.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/fuzzel.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ghostty-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ghostty-enable" class="option-anchor">rum.programs.ghostty.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable Ghostty.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ghostty-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ghostty-package" class="option-anchor">rum.programs.ghostty.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The ghostty package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.ghostty</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ghostty-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ghostty-settings" class="option-anchor">rum.programs.ghostty.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)</code></div>
+  <div class="option-description"><p>The configuration converted to INI and written to <code class="file-path">$HOME/.config/ghostty/config</code>.
+Please consult <a href="https://ghostty.org/docs/config/reference">Ghostty’s option reference</a>
+for configuration options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  font-size = 10;
+  keybind = [
+    "ctrl+h=goto_split:left"
+    "ctrl+l=goto_split:right"
+  ];
+  theme = "example-theme";
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ghostty-themes">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ghostty-themes" class="option-anchor">rum.programs.ghostty.themes</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)</code></div>
+  <div class="option-description"><p>An attribute set of themes, with the key as the theme name.
+Please reference <a href="https://ghostty.org/docs/features/theme">Ghostty’s color theme documentation</a>
+for configuration options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  example-theme = {
+    background = "#303446";
+    cursor-color = "#f2d5cf";
+    cursor-text = "#c6d0f5";
+    foreground = "#c6d0f5";
+    palette = [
+      "0=#51576d"
+      "1=#e78284"
+      "2=#a6d189"
+      "3=#e5c890"
+      "4=#8caaee"
+      "5=#f4b8e4"
+      "6=#81c8be"
+      "7=#a5adce"
+      "8=#626880"
+      "9=#e67172"
+      "10=#8ec772"
+      "11=#d9ba73"
+      "12=#7b9ef0"
+      "13=#f2a4db"
+      "14=#5abfb5"
+      "15=#b5bfe2"
+    ];
+    selection-background = "#626880";
+    selection-foreground = "#c6d0f5";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ghostty.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-git-destination">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-git-destination" class="option-anchor">rum.programs.git.destination</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>one of ".gitconfig", ".config/git/config"</code></div>
+  <div class="option-description"><p>Select your preferred git config location. Do note that options set in
+<code class="file-path">$HOME/.gitconfig</code> will shadow anything set in <code>.config/git/config</code>.</p>
+</div>
+  <div class="option-default">Default: <code>".gitconfig"</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-git-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-git-enable" class="option-anchor">rum.programs.git.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable git.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-git-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-git-package" class="option-anchor">rum.programs.git.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The git package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.git</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-git-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-git-settings" class="option-anchor">rum.programs.git.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of attribute set of (INI atom (null, bool, int, float or string) or attribute set of (INI atom (null, bool, int, float or string)))</code></div>
+  <div class="option-description"><p>Settings that will be written to your configuration file.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  diff = {
+    colorMoved = "default";
+  };
+  init = {
+    defaultBranch = "main";
+  };
+  merge = {
+    conflictstyle = "diff3";
+  };
+  user = {
+    email = "alice@example.com";
+    name = "alice";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/git.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-helix-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-helix-enable" class="option-anchor">rum.programs.helix.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable Helix.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-helix-languages">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-helix-languages" class="option-anchor">rum.programs.helix.languages</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>TOML value</code></div>
+  <div class="option-description"><p>The languages configurations converted into TOML and written to
+<code class="file-path">$HOME/.config/helix/languages.toml</code>.
+Please reference <a href="https://docs.helix-editor.com/languages.html">Helix’s language documentation</a>
+for config options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  language-server = {
+    vscode-json-language-server = {
+      command = "vscode-json-languageserver";
+    };
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-helix-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-helix-package" class="option-anchor">rum.programs.helix.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The helix package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.helix</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-helix-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-helix-settings" class="option-anchor">rum.programs.helix.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>TOML value</code></div>
+  <div class="option-description"><p>The editor configuration converted into TOML and written to
+<code class="file-path">$HOME/.config/helix/config.toml</code>.
+Please reference <a href="https://docs.helix-editor.com/editor.html">Helix’s documentation</a>
+for config options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  editor = {
+    editor = {
+      statusline = {
+        left = [
+          "mode"
+          "spinner"
+        ];
+      };
+    };
+    line-number = "relative";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-helix-themes">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-helix-themes" class="option-anchor">rum.programs.helix.themes</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of (TOML value)</code></div>
+  <div class="option-description"><p>The custom themes converted into TOML and written to
+<code class="file-path">$HOME/.config/helix/themes/</code>.
+Please reference <a href="https://docs.helix-editor.com/themes.html">Helix’s theming documentation</a>
+for config options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  theme1 = {
+    palette = {
+      black = "#000000";
+      white = "#ffffff";
+    };
+    "ui.background" = "white";
+    "ui.text" = "black";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/helix.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprland-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprland-enable" class="option-anchor">rum.programs.hyprland.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable Hyprland.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprland-extraConfig">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprland-extraConfig" class="option-anchor">rum.programs.hyprland.extraConfig</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>Extra configuration that will be appended verbatim at the end of your <a href="options.html#option-hyprland-conf" class="option-reference"><code>hyprland.conf</code></a>.</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprland-importantPrefixes">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprland-importantPrefixes" class="option-anchor">rum.programs.hyprland.importantPrefixes</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of string</code></div>
+  <div class="option-description"><p>List of prefix of attributes to source at the top of the config.</p>
+</div>
+  <div class="option-default">Default: <code>[
+  "$"
+  "bezier"
+  "name"
+]</code></div>
+  <div class="option-example">Example: <pre><code>[
+  "$"
+  "bezier"
+]</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprland-plugins">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprland-plugins" class="option-anchor">rum.programs.hyprland.plugins</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of (package or path)</code></div>
+  <div class="option-description"><p>List of Hyprland plugins to use. Can either be packages or
+absolute plugin paths.</p>
+</div>
+  <div class="option-default">Default: <code>[ ]</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprland-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprland-settings" class="option-anchor">rum.programs.hyprland.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>Hyprland configuration value</code></div>
+  <div class="option-description"><p>Hyprland configuration written in Nix. Entries with the same key
+should be written as lists. Variables’ and colors’ names should be
+quoted. See <a href="https://wiki.hyprland.org">Hyprland’s documentation</a>
+for more examples.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  "\$mod" = "SUPER";
+  decoration = {
+    rounding = "3";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprland.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprlock-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprlock-enable" class="option-anchor">rum.programs.hyprlock.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable hyprlock.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprlock.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprlock.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprlock-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprlock-package" class="option-anchor">rum.programs.hyprlock.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The hyprlock package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.hyprlock</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprlock.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprlock.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-hyprlock-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-hyprlock-settings" class="option-anchor">rum.programs.hyprlock.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>Hyprland configuration value</code></div>
+  <div class="option-description"><p>Is written to <code class="file-path">$HOME/hypr/hyprlock.conf</code>.</p>
+<p>Configuration options can be found on the <a href="https://wiki.hyprland.org/Hypr-Ecosystem/hyprlock">Hyprland Wiki</a>.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  background = [
+    {
+      blur_passes = 3;
+      blur_size = 8;
+      path = "screenshot";
+    }
+  ];
+  general = {
+    hide_cursor = true;
+    no_fade_in = false;
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprlock.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/hyprlock.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-keepassxc-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-keepassxc-enable" class="option-anchor">rum.programs.keepassxc.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable KeePassXC.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/keepassxc.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/keepassxc.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-keepassxc-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-keepassxc-package" class="option-anchor">rum.programs.keepassxc.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The keepassxc package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.keepassxc</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/keepassxc.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/keepassxc.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-keepassxc-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-keepassxc-settings" class="option-anchor">rum.programs.keepassxc.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))</code></div>
+  <div class="option-description"><p>Settings are written as an INI file to <code class="file-path">$HOME/.config/keepassxc/keepassxc.ini</code>. Please reference
+<a href="https://keepassxc.org/docs/KeePassXC_UserGuide">KeePassXC’s User Guide</a>.</p>
+<p>It also can be configured by toggling options through the GUI, but this does not seem documented.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  GUI = {
+    ColorPasswords = true;
+    MinimizeOnClose = true;
+    MinimizeOnStartup = true;
+    MinimizeToTray = true;
+    ShowTrayIcon = true;
+    TrayIconAppearance = "colorful";
+  };
+  General = {
+    BackupBeforeSave = true;
+    ConfigVersion = 2;
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/keepassxc.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/keepassxc.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-lsd-colors">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-lsd-colors" class="option-anchor">rum.programs.lsd.colors</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>YAML value</code></div>
+  <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/lsd/colors.yaml</code>, defining the colors used by lsd.
+Please reference <a href="https://github.com/lsd-rs/lsd#color-theme-file-content">lsd’s color theme example</a>
+to configure it accordingly.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  group = 187;
+  permission = {
+    read = "dark_green";
+    write = "dark_yellow";
+  };
+  user = 230;
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-lsd-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-lsd-enable" class="option-anchor">rum.programs.lsd.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable LSD (LSDeluxe).</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-lsd-icons">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-lsd-icons" class="option-anchor">rum.programs.lsd.icons</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>YAML value</code></div>
+  <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/lsd/icons.yaml</code>, defining the icons used by lsd.
+Please reference <a href="https://github.com/lsd-rs/lsd#icon-theme">lsd’s icon theme example</a>
+to configure it accordingly.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  filetype = {
+    dir = "📂";
+    file = "📄";
+    pipe = "📩";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-lsd-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-lsd-package" class="option-anchor">rum.programs.lsd.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The lsd package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.lsd</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-lsd-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-lsd-settings" class="option-anchor">rum.programs.lsd.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>YAML value</code></div>
+  <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/lsd/config.yaml</code>, defining lsd settings.
+Please reference  <a href="https://github.com/lsd-rs/lsd#config-file-content">lsd’s example configuration</a>
+to configure it accordingly.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  classic = false;
+  color = {
+    theme = "default";
+  };
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/lsd.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-bindings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-bindings" class="option-anchor">rum.programs.ncmpcpp.bindings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of list of (submodule)</code></div>
+  <div class="option-description"><p>Custom bindings configuration written to <code class="file-path">$HOME/.config/ncmpcpp/bindings</code>.
+Please reference ncmpcpp(1) (ncmpcpp’s man page) to configure it accordingly, or consult
+<a href="https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/bindings">ncmpcpp’s example bindings file</a>.</p>
+<p>The lists are separated between keys, for actions ran on keypresses, and commands, for actions ran
+on commands. The option’s example demonstrates this greatly.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  commands = [
+    {
+      actions = [
+        "stop"
+        "quit"
+      ];
+      binding = "!sq";
+    }
+    {
+      actions = [
+        "quit"
+      ];
+      binding = "!q";
+      deferred = true;
+    }
+  ];
+  keys = [
+    {
+      actions = [
+        "stop"
+        "quit"
+      ];
+      binding = "ctrl-q";
+    }
+    {
+      actions = [
+        "quit"
+      ];
+      binding = "q";
+      deferred = true;
+    }
+  ];
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-actions">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-actions" class="option-anchor">rum.programs.ncmpcpp.bindings.&lt;name&gt;.*.actions</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>null or (list of string)</code></div>
+  <div class="option-description"><p>The actions to be ran on either the key’s or command’s activation.</p>
+</div>
+  <div class="option-default">Default: <code>null</code></div>
+  <div class="option-example">Example: <pre><code>[
+  "stop"
+  "quit"
+]</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-binding">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-binding" class="option-anchor">rum.programs.ncmpcpp.bindings.&lt;name&gt;.*.binding</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>null or string</code></div>
+  <div class="option-description"><p>The key or command for which the set of actions is binded to.</p>
+</div>
+  <div class="option-default">Default: <code>null</code></div>
+  <div class="option-example">Example: <code>"p"</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-deferred">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-bindings-&lt;name&gt;-*-deferred" class="option-anchor">rum.programs.ncmpcpp.bindings.&lt;name&gt;.*.deferred</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether the binding or command should be deferred (true) or immediate (false).</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-enable" class="option-anchor">rum.programs.ncmpcpp.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable Enables the rum module for ncmpcpp, a mpd-based music player.
+.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-package" class="option-anchor">rum.programs.ncmpcpp.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The ncmpcpp package to use. You can use an override to toggle certain features like the visualizer, a clock screen, and more.
+Please check out the package source for a complete list.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.ncmpcpp</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-ncmpcpp-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-ncmpcpp-settings" class="option-anchor">rum.programs.ncmpcpp.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of (signed integer or string or boolean)</code></div>
+  <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/ncmpcpp/config</code>.
+Please reference <span class="manpage-reference">ncmpcpp(1)</span> to configure it accordingly, or consult <a href="https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/config">ncmpcpp’s example configuration</a>.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  mpd_host = "localhost";
+  mpd_music_dir = "~/music";
+  mpd_port = 6600;
+  statusbar_visibility = true;
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/ncmpcpp.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-obs-studio-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-obs-studio-enable" class="option-anchor">rum.programs.obs-studio.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable OBS Studio.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/obs-studio.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/obs-studio.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-obs-studio-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-obs-studio-package" class="option-anchor">rum.programs.obs-studio.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The obs-studio package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.obs-studio</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/obs-studio.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/obs-studio.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-obs-studio-plugins">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-obs-studio-plugins" class="option-anchor">rum.programs.obs-studio.plugins</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of package</code></div>
+  <div class="option-description"><p>A list of plugins the obs-studio package will be wrapped with.
+Set of plugins available in nixpkgs under the obs-studio-plugins set.</p>
+</div>
+  <div class="option-default">Default: <code>[ ]</code></div>
+  <div class="option-example">Example: <pre><code>[
+  <derivation wlrobs-unstable-2023-08-23>
+  <derivation obs-vkcapture-1.5.1>
+]</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/obs-studio.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/obs-studio.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-spotify-player-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-spotify-player-enable" class="option-anchor">rum.programs.spotify-player.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable spotify_player.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-spotify-player-keymap">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-spotify-player-keymap" class="option-anchor">rum.programs.spotify-player.keymap</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>TOML value</code></div>
+  <div class="option-description"><p>Sets of keymaps and actions converted into TOML and written to
+<code class="file-path">$HOME/.config/spotify-player/keymap.toml</code>.
+See example for how to format declarations.</p>
+<p>Please reference <a href="https://github.com/aome510/spotify-player/blob/master/docs/config.md#keymaps">spotify_player’s keymaps documentation</a>
+for more information.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  actions = [
+    {
+      action = "GoToArtist";
+      key_sequence = "g A";
+    }
+  ];
+  keymaps = [
+    {
+      command = "NextTrack";
+      key_sequence = "g n";
+    }
+  ];
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-spotify-player-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-spotify-player-package" class="option-anchor">rum.programs.spotify-player.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The spotify-player package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.spotify-player</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-spotify-player-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-spotify-player-settings" class="option-anchor">rum.programs.spotify-player.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>TOML value</code></div>
+  <div class="option-description"><p>The configuration converted into TOML and written to
+<code class="file-path">$HOME/.config/spotify-player/app.toml</code>.</p>
+<p>Please reference <a href="https://github.com/aome510/spotify-player/blob/master/docs/config.md#general">spotify_player’s configuration documentation</a>
+for configuration options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  device = {
+    device_type = "computer";
+    name = "nixos";
+    normalization = true;
+    volume = 40;
+  };
+  enable_notify = false;
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-spotify-player-themes">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-spotify-player-themes" class="option-anchor">rum.programs.spotify-player.themes</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of (TOML value)</code></div>
+  <div class="option-description"><p>The theme converted into TOML and written to
+<code class="file-path">$HOME/.config/spotify-player/themes.toml</code>.</p>
+<p>Please reference <a href="https://github.com/aome510/spotify-player/blob/master/docs/config.md#themes">spotify_player’s theme documentation</a>
+for configuration options.</p>
+</div>
+  <div class="option-default">Default: <code>[ ]</code></div>
+  <div class="option-example">Example: <pre><code>[
+  {
+    component_style = {
+      like = {
+        fg = "Red";
+        modifiers = [
+          "Bold"
+        ];
+      };
+      secondary_row = {
+        bg = "#677075";
+      };
+      selection = {
+        bg = "Black";
+        fg = "White";
+        modifiers = [
+          "Bold"
+        ];
+      };
+    };
+    name = "default2";
+    palette = {
+      black = "black";
+      blue = "blue";
+      bright_black = "bright_black";
+      bright_blue = "bright_blue";
+      bright_cyan = "bright_cyan";
+      bright_green = "bright_green";
+      bright_magenta = "bright_magenta";
+      bright_red = "bright_red";
+      bright_white = "bright_white";
+      bright_yellow = "bright_yellow";
+      cyan = "cyan";
+      green = "green";
+      magenta = "magenta";
+      red = "red";
+      white = "white";
+      yellow = "yellow";
+    };
+  }
+]</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/spotify-player.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-starship-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-starship-enable" class="option-anchor">rum.programs.starship.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable starship module..</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/starship.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/starship.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-starship-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-starship-package" class="option-anchor">rum.programs.starship.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The starship package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.starship</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/starship.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/starship.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-starship-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-starship-settings" class="option-anchor">rum.programs.starship.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>TOML value</code></div>
+  <div class="option-description"><p>The configuration converted to TOML and written to <code class="file-path">$HOME/.config/starship.toml</code>.
+Please reference <a href="https://starship.rs/config">Starship’s documentation</a>
+for configuration options.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  add_newline = false;
+  character = {
+    error_symbol = "➜";
+    success_symbol = "➜";
+  };
+  format = "$line_break$package$line_break$character";
+  scan_timeout = 10;
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/starship.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/starship.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-tofi-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-tofi-enable" class="option-anchor">rum.programs.tofi.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable tofi.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/tofi.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/tofi.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-tofi-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-tofi-package" class="option-anchor">rum.programs.tofi.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The tofi package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.tofi</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/tofi.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/tofi.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-tofi-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-tofi-settings" class="option-anchor">rum.programs.tofi.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of (string or path or boolean or signed integer or floating point number)</code></div>
+  <div class="option-description"><p>The configuration converted into “key = value” and written to
+<code class="file-path">$HOME/.config/tofi/config</code>.
+Please reference <span class="manpage-reference">tofi(5)</span>,
+or see an example at <a href="https://github.com/philj56/tofi/blob/master/doc/config">tofi’s default configuration</a>.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  horizontal = false;
+  num-results = 0;
+  text-color = "#FFFFFF";
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/tofi.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/tofi.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-vscode-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-vscode-enable" class="option-anchor">rum.programs.vscode.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable Visual Studio Code.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/vscode.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/vscode.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-vscode-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-vscode-package" class="option-anchor">rum.programs.vscode.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The vscode package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.vscode</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/vscode.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/vscode.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-vscode-settings">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-vscode-settings" class="option-anchor">rum.programs.vscode.settings</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>JSON value</code></div>
+  <div class="option-description"><p>The configuration converted into JSON and written to
+<code class="file-path">$HOME/.config/Code/User/settings.json</code>.</p>
+<p>Please reference <a href="https://code.visualstudio.com/docs/getstarted/settings#_settings-json-file">Visual Studio Code’s official documentation</a>
+for more information.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-example">Example: <pre><code>{
+  catppuccin = {
+    accentColor = "red";
+  };
+  "editor.fontFamily" = "Fira Code Nerdfont";
+  "editor.fontLigatures" = true;
+  "workbench.colorTheme" = "Catppuccin Mocha";
+}</code></pre></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/vscode.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/vscode.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-enable" class="option-anchor">rum.programs.zsh.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable zsh module..</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-initConfig">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-initConfig" class="option-anchor">rum.programs.zsh.initConfig</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zshrc</code>.;</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-integrations-starship-enable">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-integrations-starship-enable" class="option-anchor">rum.programs.zsh.integrations.starship.enable</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable starship integration.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-loginConfig">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-loginConfig" class="option-anchor">rum.programs.zsh.loginConfig</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zlogin</code>.;</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-logoutConfig">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-logoutConfig" class="option-anchor">rum.programs.zsh.logoutConfig</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zlogout</code>.;</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-package">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-package" class="option-anchor">rum.programs.zsh.package</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>package</code></div>
+  <div class="option-description"><p>The zsh package to use.</p>
+</div>
+  <div class="option-default">Default: <code>pkgs.zsh</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-plugins">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-plugins" class="option-anchor">rum.programs.zsh.plugins</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>attribute set of (submodule)</code></div>
+  <div class="option-description"><p>An attrset of plugins to load into zsh. Configuration of the former can be done and is advised to be
+done at this level, for the sake of organization.</p>
+</div>
+  <div class="option-default">Default: <code>{ }</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-plugins-&lt;name&gt;-completions">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-plugins-&lt;name&gt;-completions" class="option-anchor">rum.programs.zsh.plugins.&lt;name&gt;.completions</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>list of path</code></div>
+  <div class="option-description"><p>A list of completions that will be loaded into <code>fpath</code>.</p>
+</div>
+  <div class="option-default">Default: <code>[ ]</code></div>
+  <div class="option-example">Example: <code>["\${pkgs.nix-zsh-completions}/share/zsh/site-functions"]</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-plugins-&lt;name&gt;-config">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-plugins-&lt;name&gt;-config" class="option-anchor">rum.programs.zsh.plugins.&lt;name&gt;.config</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
+  <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zshrc</code> right after the plugin import..;</p>
+</div>
+  <div class="option-default">Default: <code>""</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+<div class="option" id="option-rum-programs-zsh-plugins-&lt;name&gt;-source">
+  <h3 class="option-name">
+    <a href="#option-rum-programs-zsh-plugins-&lt;name&gt;-source" class="option-anchor">rum.programs.zsh.plugins.&lt;name&gt;.source</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>null or path</code></div>
+  <div class="option-description"><p>Path to the plugin file to load.</p>
+</div>
+  <div class="option-default">Default: <code>null</code></div>
+  <div class="option-example">Example: <code>"\${pkgs.nix-zsh-completions}/share/zsh/plugins/nix/nix-zsh-completions-plugin.zsh\"</code></div>
+  <div class="option-declared">Declared in: <code><a href="file:///nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix" target="_blank">/nix/store/84546l5k21mvx6slnw6n1miq9yr9shdv-source/modules/collection/programs/zsh.nix</a></code></div>
+</div>
+</div>
 
           <div class="footnotes-container">
             <!-- Footnotes will be appended here -->
@@ -104,41 +2113,8 @@ provides, allowing you to simply install and config a program.</p>
           }
         }
 
-        // Make headings clickable for anchor links
-        const content = document.querySelector(".content");
-        const headings = content.querySelectorAll("h1, h2, h3, h4, h5, h6");
-
-        headings.forEach(function (heading) {
-          // Make sure all headings have IDs
-          if (!heading.id) {
-            heading.id = heading.textContent
-              .toLowerCase()
-              .replace(/[^\w\s-]/g, "")
-              .replace(/[\s-]+/g, "-")
-              .trim();
-
-            if (!heading.id) {
-              heading.id =
-                "section-" + Math.random().toString(36).substring(2, 9);
-            }
-          }
-
-          // Make the entire heading clickable
-          heading.addEventListener("click", function (e) {
-            const id = this.id;
-            history.pushState(null, null, "#" + id);
-
-            // Scroll with offset
-            const offset =
-              this.getBoundingClientRect().top + window.scrollY - 80;
-            window.scrollTo({
-              top: offset,
-              behavior: "smooth",
-            });
-          });
-        });
-
         // Process footnotes
+        const content = document.querySelector(".content");
         const footnoteContainer = document.querySelector(
           ".footnotes-container",
         );
@@ -177,22 +2153,52 @@ provides, allowing you to simply install and config a program.</p>
           });
         }
 
-        // Handle initial hash navigation
-        function scrollToElement(element) {
-          if (element) {
-            const offset =
-              element.getBoundingClientRect().top + window.scrollY - 80;
-            window.scrollTo({
-              top: offset,
-              behavior: "smooth",
-            });
-          }
-        }
+        // Copy link functionality
+        document.querySelectorAll(".copy-link").forEach(function (copyLink) {
+          copyLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
+            // Get option ID from parent element
+            const option = copyLink.closest(".option");
+            const optionId = option.id;
+
+            // Create URL with hash
+            const url = new URL(window.location.href);
+            url.hash = optionId;
+
+            // Copy to clipboard
+            navigator.clipboard
+              .writeText(url.toString())
+              .then(function () {
+                // Show feedback
+                const feedback = copyLink.nextElementSibling;
+                feedback.style.display = "inline";
+
+                // Hide after 2 seconds
+                setTimeout(function () {
+                  feedback.style.display = "none";
+                }, 2000);
+              })
+              .catch(function (err) {
+                console.error("Could not copy link: ", err);
+              });
+          });
+        });
+
+        // Highlight option if it's in the URL hash
         if (window.location.hash) {
-          const targetElement = document.querySelector(window.location.hash);
-          if (targetElement) {
-            setTimeout(() => scrollToElement(targetElement), 0);
+          const targetOption = document.querySelector(window.location.hash);
+          if (targetOption) {
+            // Scroll to the option with some offset
+            setTimeout(function () {
+              window.scrollTo({
+                top: targetOption.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }, 100);
+            // Add highlight class
+            targetOption.classList.add("highlight");
           }
         }
       });
