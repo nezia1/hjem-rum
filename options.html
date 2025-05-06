@@ -971,9 +971,13 @@ by your GTK theme(s).</p>
 </div>
   <div class="option-default">Default: <code>[ ]</code></div>
   <div class="option-example">Example: <pre><code>[
-  &lt;derivation catppuccin-papirus-folders-unstable-2023-08-02&gt;
-  &lt;derivation bibata-cursors-2.0.7&gt;
-]</code></pre></div>
+  (pkgs.catppuccin-papirus-folders.override {
+    accent = "rosewater";
+    flavor = "mocha";
+  })
+  pkgs.bibata-cursors
+];
+</code></pre></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/misc/gtk.nix" target="_blank">&lt;hjem-rum/modules/collection/misc/gtk.nix&gt;</a></code></div>
 </div>
 <div class="option" id="option-rum-misc-gtk-settings">
@@ -1428,11 +1432,12 @@ all available options.</p>
   </h3>
   <div class="option-type">Type: <code>package</code></div>
   <div class="option-description"><p>The ghostty package to use. You can use an override to configure some settings baked into the package.</p>
-<pre><code class="language-nix">package = pkgs.ghostty.override {
+</div>
+  <div class="option-default">Default: <code>pkgs.ghostty</code></div>
+  <div class="option-example">Example: <pre><code>package = pkgs.ghostty.override {
   withAdwaita = true;
 };
 </code></pre></div>
-  <div class="option-default">Default: <code>pkgs.ghostty</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/ghostty.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/ghostty.nix&gt;</a></code></div>
 </div>
 <div class="option" id="option-rum-programs-ghostty-settings">
@@ -1998,7 +2003,7 @@ to configure it accordingly.</p>
   </h3>
   <div class="option-type">Type: <code>attribute set of list of (submodule)</code></div>
   <div class="option-description"><p>Custom bindings configuration written to <code class="file-path">$HOME/.config/ncmpcpp/bindings</code>.
-Please reference ncmpcpp(1) (ncmpcpp’s man page) to configure it accordingly, or consult
+Please reference <a href="https://man.archlinux.org/man/ncmpcpp.1" class="manpage-reference">ncmpcpp(1)</a> to configure it accordingly, or consult
 <a href="https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/bindings">ncmpcpp’s example bindings file</a>.</p>
 <p>The lists are separated between keys, for actions ran on keypresses, and commands, for actions ran
 on commands. The option’s example demonstrates this greatly.</p>
@@ -2103,7 +2108,9 @@ on commands. The option’s example demonstrates this greatly.</p>
   </h3>
   <div class="option-type">Type: <code>package</code></div>
   <div class="option-description"><p>The ncmpcpp package to use. You can override the package to customize certain settings that are baked into the package.</p>
-<pre><code class="language-nix">package = pkgs.ncmpccpp.override {
+</div>
+  <div class="option-default">Default: <code>pkgs.ncmpcpp</code></div>
+  <div class="option-example">Example: <pre><code>  pkgs.ncmpcpp.override {
   # useful overrides in the package
   outputsSupport = true; # outputs screen
   visualizerSupport = false; # visualizer screen
@@ -2111,7 +2118,6 @@ on commands. The option’s example demonstrates this greatly.</p>
   taglibSupport = true; # tag editor
 };
 </code></pre></div>
-  <div class="option-default">Default: <code>pkgs.ncmpcpp</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/ncmpcpp.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/ncmpcpp.nix&gt;</a></code></div>
 </div>
 <div class="option" id="option-rum-programs-ncmpcpp-settings">
@@ -2154,7 +2160,9 @@ Please reference <a href="https://man.archlinux.org/man/ncmpcpp.1" class="manpag
   </h3>
   <div class="option-type">Type: <code>package</code></div>
   <div class="option-description"><p>The obs-studio package to use. You can override the package to install plugins.</p>
-<pre><code class="language-nix"># OBS has a special &quot;package&quot; to wrap the obs-studio package with plugins
+</div>
+  <div class="option-default">Default: <code>pkgs.obs-studio</code></div>
+  <div class="option-example">Example: <pre><code># OBS has a special "package" to wrap the obs-studio package with plugins
 package = pkgs.wrapOBS.override {
   # These plugins will get installed and wrapped into obs-studio for use
   plugins = with pkgs.obs-studio-plugins; [
@@ -2164,7 +2172,6 @@ package = pkgs.wrapOBS.override {
   ];
 };
 </code></pre></div>
-  <div class="option-default">Default: <code>pkgs.obs-studio</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/obs-studio.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/obs-studio.nix&gt;</a></code></div>
 </div>
 <div class="option" id="option-rum-programs-spotify-player-enable">
@@ -2219,11 +2226,13 @@ for more information.</p>
   <div class="option-type">Type: <code>package</code></div>
   <div class="option-description"><p>The spotify-player package to use. You can use an override to configure certain settings
 baked into the package.</p>
-<pre><code class="language-nix">package = pkgs.spotify-player.override {
+</div>
+  <div class="option-default">Default: <code>pkgs.spotify-player</code></div>
+  <div class="option-example">Example: <pre><code>package = pkgs.spotify-player.override {
   # Useful overrides in the package
   withStreaming = true;
   withDaemon = true;
-  withAudioBackend = &quot;rodio&quot;; # alsa, pulseaudio, rodio, portaudio, jackaudio, rodiojack, sdl
+  withAudioBackend = "rodio"; # alsa, pulseaudio, rodio, portaudio, jackaudio, rodiojack, sdl
   withMediaControl = true;
   withImage = true;
   withNotify = true;
@@ -2231,7 +2240,6 @@ baked into the package.</p>
   withFuzzy = true;
 };
 </code></pre></div>
-  <div class="option-default">Default: <code>pkgs.spotify-player</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/spotify-player.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/spotify-player.nix&gt;</a></code></div>
 </div>
 <div class="option" id="option-rum-programs-spotify-player-settings">
