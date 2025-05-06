@@ -989,9 +989,8 @@ by your GTK theme(s).</p>
   <div class="option-type">Type: <code>attribute set of (boolean or signed integer or floating point number or string)</code></div>
   <div class="option-description"><p>The settings that will be written to the various gtk files
 to configure the GTK theme. GTK documentation is perhaps
-nebulous, but the Arch Wiki entry and the <a href="https://docs.gtk.org/gtk3/class.Settings.html">official GTK
-documentation</a>
-are decent places to start.</p>
+nebulous, but the <a href="https://wiki.archlinux.org/title/GTK">Arch Wiki entry</a> and the <a href="https://docs.gtk.org/gtk3/class.Settings.html">official GTK
+documentation</a> are decent places to start.</p>
 <p>Please note that each option name will have “gtk-” prepended
 to it, so there is no need to include that on every single option.</p>
 </div>
@@ -1089,7 +1088,7 @@ for config options.</p>
   <div class="option-type">Type: <code>TOML value</code></div>
   <div class="option-description"><p>The configuration converted into TOML and written to
 <code class="file-path">$HOME/.config/bottom/bottom.toml</code>.</p>
-<p>Please reference <a href="https://bottom.pages.dev/stable/configuration/config-file/">bottom’s config file documentation</a>
+<p>Please reference <a href="https://bottom.pages.dev/stable/configuration/config-file">bottom’s config file documentation</a>
 for config options.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
@@ -1139,8 +1138,7 @@ for config options.</p>
   <div class="option-type">Type: <code>attribute set of (string or absolute path)</code></div>
   <div class="option-description"><p>Extra configuration files, they will all be written verbatim
 to <code>.config/fish/conf.d/&lt;name&gt;.fish</code>.</p>
-<p>Those files are run before <code>.config/fish/config.fish</code> as per the fish
-<a href="https://fishshell.com/docs/current/language.html#configuration-files">documentation</a>.</p>
+<p>Those files are run before <code>.config/fish/config.fish</code> as per the <a href="https://fishshell.com/docs/current/language.html#configuration-files">fish documentation</a>.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1394,9 +1392,8 @@ for all available options.</p>
     <span class="copy-feedback">Link copied!</span>
   </h3>
   <div class="option-type">Type: <code>attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))</code></div>
-  <div class="option-description"><p>Settings are written as an INI file to <code class="file-path">$HOME/.config/gammastep/config.ini</code>.</p>
-<p>Refer to https://gitlab.com/chinstrap/gammastep/-/blob/master/gammastep.conf.sample for
-all available options.</p>
+  <div class="option-description"><p>Settings are written as an INI file to <code class="file-path">$HOME/.config/gammastep/config.ini</code>.
+Refer to <a href="https://gitlab.com/chinstrap/gammastep/-/blob/master/gammastep.conf.sample">gammastep’s example configuration</a> all available options.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1590,9 +1587,8 @@ for configuration options.</p>
   </h3>
   <div class="option-type">Type: <code>TOML value</code></div>
   <div class="option-description"><p>The languages configurations converted into TOML and written to
-<code class="file-path">$HOME/.config/helix/languages.toml</code>.
-Please reference <a href="https://docs.helix-editor.com/languages.html">Helix’s language documentation</a>
-for config options.</p>
+<code class="file-path">$HOME/.config/helix/languages.toml</code>. Please reference
+<a href="https://docs.helix-editor.com/languages.html">Helix’s language documentation</a> for config options.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1624,9 +1620,8 @@ for config options.</p>
   </h3>
   <div class="option-type">Type: <code>TOML value</code></div>
   <div class="option-description"><p>The editor configuration converted into TOML and written to
-<code class="file-path">$HOME/.config/helix/config.toml</code>.
-Please reference <a href="https://docs.helix-editor.com/editor.html">Helix’s documentation</a>
-for config options.</p>
+<code class="file-path">$HOME/.config/helix/config.toml</code>. Please reference
+<a href="https://docs.helix-editor.com/editor.html">Helix’s documentation</a> for config options.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1652,9 +1647,8 @@ for config options.</p>
   </h3>
   <div class="option-type">Type: <code>attribute set of (TOML value)</code></div>
   <div class="option-description"><p>The custom themes converted into TOML and written to
-<code class="file-path">$HOME/.config/helix/themes/</code>.
-Please reference <a href="https://docs.helix-editor.com/themes.html">Helix’s theming documentation</a>
-for config options.</p>
+<code class="file-path">$HOME/.config/helix/themes/</code>. Please reference
+<a href="https://docs.helix-editor.com/themes.html">Helix’s theming documentation</a> for config options.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1791,8 +1785,7 @@ absolute plugin paths.</p>
   <div class="option-type">Type: <code>Hyprland configuration value</code></div>
   <div class="option-description"><p>Hyprland configuration written in Nix. Entries with the same key
 should be written as lists. Variables’ and colors’ names should be
-quoted. See <a href="https://wiki.hyprland.org">Hyprland’s documentation</a>
-for more examples.</p>
+quoted. See <a href="https://wiki.hyprland.org">Hyprland’s documentation</a> for more examples.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1915,8 +1908,7 @@ for more examples.</p>
   </h3>
   <div class="option-type">Type: <code>YAML value</code></div>
   <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/lsd/colors.yaml</code>, defining the colors used by lsd.
-Please reference <a href="https://github.com/lsd-rs/lsd#color-theme-file-content">lsd’s color theme example</a>
-to configure it accordingly.</p>
+Please reference <a href="https://github.com/lsd-rs/lsd#color-theme-file-content">lsd’s color theme example</a> to configure it accordingly.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1950,8 +1942,7 @@ to configure it accordingly.</p>
   </h3>
   <div class="option-type">Type: <code>YAML value</code></div>
   <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/lsd/icons.yaml</code>, defining the icons used by lsd.
-Please reference <a href="https://github.com/lsd-rs/lsd#icon-theme">lsd’s icon theme example</a>
-to configure it accordingly.</p>
+Please reference <a href="https://github.com/lsd-rs/lsd#icon-theme">lsd’s icon theme example</a> to configure it accordingly.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -1983,8 +1974,7 @@ to configure it accordingly.</p>
   </h3>
   <div class="option-type">Type: <code>YAML value</code></div>
   <div class="option-description"><p>Configuration written to <code class="file-path">$HOME/.config/lsd/config.yaml</code>, defining lsd settings.
-Please reference  <a href="https://github.com/lsd-rs/lsd#config-file-content">lsd’s example configuration</a>
-to configure it accordingly.</p>
+Please reference  <a href="https://github.com/lsd-rs/lsd#config-file-content">lsd’s example configuration</a> to configure it accordingly.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -2110,7 +2100,7 @@ on commands. The option’s example demonstrates this greatly.</p>
   <div class="option-description"><p>The ncmpcpp package to use. You can override the package to customize certain settings that are baked into the package.</p>
 </div>
   <div class="option-default">Default: <code>pkgs.ncmpcpp</code></div>
-  <div class="option-example">Example: <pre><code>  pkgs.ncmpcpp.override {
+  <div class="option-example">Example: <pre><code>pkgs.ncmpcpp.override {
   # useful overrides in the package
   outputsSupport = true; # outputs screen
   visualizerSupport = false; # visualizer screen
@@ -2368,8 +2358,7 @@ for configuration options.</p>
   </h3>
   <div class="option-type">Type: <code>TOML value</code></div>
   <div class="option-description"><p>The configuration converted to TOML and written to <code class="file-path">$HOME/.config/starship.toml</code>.
-Please reference <a href="https://starship.rs/config">Starship’s documentation</a>
-for configuration options.</p>
+Please reference <a href="https://starship.rs/config">Starship’s documentation</a> for configuration options.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -2416,9 +2405,9 @@ for configuration options.</p>
   </h3>
   <div class="option-type">Type: <code>attribute set of (string or absolute path or boolean or signed integer or floating point number)</code></div>
   <div class="option-description"><p>The configuration converted into “key = value” and written to
-<code class="file-path">$HOME/.config/tofi/config</code>.
-Please reference <a href="https://github.com/philj56/tofi/blob/master/doc/tofi.5.md" class="manpage-reference">tofi(5)</a>,
-or see an example at <a href="https://github.com/philj56/tofi/blob/master/doc/config">tofi’s default configuration</a>.</p>
+<code class="file-path">$HOME/.config/tofi/config</code>. Please reference
+<a href="https://github.com/philj56/tofi/blob/master/doc/tofi.5.md" class="manpage-reference">tofi(5)</a>, or see an example at
+<a href="https://github.com/philj56/tofi/blob/master/doc/config">tofi’s default configuration</a>.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
   <div class="option-example">Example: <pre><code>{
@@ -2497,7 +2486,7 @@ for more information.</p>
   </h3>
   <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
   <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zshrc</code>.</p>
-<p>A good starting point for learning how to configure zsh is <a href="https://wiki.archlinux.org/title/Zsh">the ArchWiki entry</a>.</p>
+<p>A good starting point for learning how to configure zsh is the <a href="https://wiki.archlinux.org/title/Zsh">Arch Wiki entry</a>.</p>
 </div>
   <div class="option-default">Default: <code>""</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/zsh.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/zsh.nix&gt;</a></code></div>
@@ -2510,7 +2499,7 @@ for more information.</p>
   </h3>
   <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
   <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zlogin</code>.</p>
-<p>A good starting point for learning how to configure zsh is <a href="https://wiki.archlinux.org/title/Zsh">the ArchWiki entry</a>.</p>
+<p>A good starting point for learning how to configure zsh is the <a href="https://wiki.archlinux.org/title/Zsh">Arch Wiki entry</a>.</p>
 </div>
   <div class="option-default">Default: <code>""</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/zsh.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/zsh.nix&gt;</a></code></div>
@@ -2523,7 +2512,7 @@ for more information.</p>
   </h3>
   <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
   <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zlogout</code>.</p>
-<p>A good starting point for learning how to configure zsh is <a href="https://wiki.archlinux.org/title/Zsh">the ArchWiki entry</a>.</p>
+<p>A good starting point for learning how to configure zsh is the <a href="https://wiki.archlinux.org/title/Zsh">Arch Wiki entry</a>.</p>
 </div>
   <div class="option-default">Default: <code>""</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/zsh.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/zsh.nix&gt;</a></code></div>
@@ -2574,7 +2563,7 @@ done at this level, for the sake of organization.</p>
   </h3>
   <div class="option-type">Type: <code>strings concatenated with "\n"</code></div>
   <div class="option-description"><p>Commands that will be added verbatim to <code class="file-path">.zshrc</code> right after the plugin import..</p>
-<p>A good starting point for learning how to configure zsh is <a href="https://wiki.archlinux.org/title/Zsh">the ArchWiki entry</a>.</p>
+<p>A good starting point for learning how to configure zsh is the <a href="https://wiki.archlinux.org/title/Zsh">Arch Wiki entry</a>.</p>
 </div>
   <div class="option-default">Default: <code>""</code></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/programs/zsh.nix" target="_blank">&lt;hjem-rum/modules/collection/programs/zsh.nix&gt;</a></code></div>
