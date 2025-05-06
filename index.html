@@ -1174,9 +1174,9 @@ to <code>.config/fish/conf.d/&lt;name&gt;.fish</code>.</p>
   <div class="option-description"><p>A fish function which is being written to <code>.config/fish/functions/&lt;name&gt;.fish</code>.</p>
 <p>If the input value is a string, its contents will be wrapped
 inside of a function declaration, like so:</p>
-<pre><code class="language-fish">    function &lt;name&gt;;
-        &lt;function body&gt;
-    end
+<pre><code class="language-fish">function &lt;name&gt;;
+    &lt;function body&gt;
+end
 </code></pre><p>Otherwise you are expected to handle that yourself.</p>
 </div>
   <div class="option-default">Default: <code>{ }</code></div>
@@ -1434,7 +1434,7 @@ all available options.</p>
   <div class="option-description"><p>The ghostty package to use. You can use an override to configure some settings baked into the package.</p>
 </div>
   <div class="option-default">Default: <code>pkgs.ghostty</code></div>
-  <div class="option-example">Example: <pre><code>package = pkgs.ghostty.override {
+  <div class="option-example">Example: <pre><code>pkgs.ghostty.override {
   withAdwaita = true;
 };
 </code></pre></div>
