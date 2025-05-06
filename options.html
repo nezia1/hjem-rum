@@ -46,8 +46,7 @@
           <div class="docs-nav">
             <h2>Documents</h2>
             <ul>
-              <li><a href="contributing.html">Contributing</a></li>
-<li><a href="index.html">Hjem Rum</a></li>
+              <li><a href="options.html">Module Options</a></li>
 <li><a href="search.html">Search</a></li>
 
             </ul>
@@ -60,6 +59,28 @@
   
 
   
+  
+  <li>
+    <details class="toc-category">
+      <summary title="rum.environment">
+        <span>rum.environment</span>
+        <span class="toc-count">1</span>
+      </summary>
+      <ul>
+        
+
+        
+        <li>
+          <a href="#option-rum-environment-hideWarning" title="rum.environment.hideWarning">
+            hideWarning
+            
+            
+          </a>
+        </li>
+        
+      </ul>
+    </details>
+  </li>
   
   <li>
     <details class="toc-category">
@@ -859,7 +880,20 @@
           </div>
           
 
-          <div class="options-container"><div class="option" id="option-rum-misc-gtk-bookmarks">
+          <div class="options-container"><div class="option" id="option-rum-environment-hideWarning">
+  <h3 class="option-name">
+    <a href="#option-rum-environment-hideWarning" class="option-anchor">rum.environment.hideWarning</a>
+    <span class="copy-link" title="Copy link to this option"></span>
+    <span class="copy-feedback">Link copied!</span>
+  </h3>
+  <div class="option-type">Type: <code>boolean</code></div>
+  <div class="option-description"><p>Whether to enable a warning for env vars not being implemented.</p>
+</div>
+  <div class="option-default">Default: <code>false</code></div>
+  <div class="option-example">Example: <code>true</code></div>
+  <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/environment/warning.nix" target="_blank">&lt;hjem-rum/modules/collection/environment/warning.nix&gt;</a></code></div>
+</div>
+<div class="option" id="option-rum-misc-gtk-bookmarks">
   <h3 class="option-name">
     <a href="#option-rum-misc-gtk-bookmarks" class="option-anchor">rum.misc.gtk.bookmarks</a>
     <span class="copy-link" title="Copy link to this option"></span>
@@ -870,7 +904,7 @@
 Each entry should have one of the following formats:</p>
 <ul>
 <li><code>[uri]</code></li>
-<li><code>[uri] &amp;lt;display name&amp;gt;</code></li>
+<li><code>[uri] &lt;display name&gt;</code></li>
 </ul>
 </div>
   <div class="option-default">Default: <code>[ ]</code></div>
@@ -937,8 +971,8 @@ by your GTK theme(s).</p>
 </div>
   <div class="option-default">Default: <code>[ ]</code></div>
   <div class="option-example">Example: <pre><code>[
-  <derivation catppuccin-papirus-folders-unstable-2023-08-02>
-  <derivation bibata-cursors-2.0.7>
+  &lt;derivation catppuccin-papirus-folders-unstable-2023-08-02&gt;
+  &lt;derivation bibata-cursors-2.0.7&gt;
 ]</code></pre></div>
   <div class="option-declared">Declared in: <code><a href="https://github.com/snugnug/hjem-rum/blob/main/modules/collection/misc/gtk.nix" target="_blank">&lt;hjem-rum/modules/collection/misc/gtk.nix&gt;</a></code></div>
 </div>
@@ -1086,7 +1120,7 @@ for config options.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>null or string or path</code></div>
+  <div class="option-type">Type: <code>null or string or absolute path</code></div>
   <div class="option-description"><p>The main configuration for fish, written verbatim to <code>.config/fish/config.fish</code>.</p>
 </div>
   <div class="option-default">Default: <code>null</code></div>
@@ -1098,9 +1132,9 @@ for config options.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>attribute set of (string or path)</code></div>
+  <div class="option-type">Type: <code>attribute set of (string or absolute path)</code></div>
   <div class="option-description"><p>Extra configuration files, they will all be written verbatim
-to <code>.config/fish/conf.d/&amp;lt;name&amp;gt;.fish</code>.</p>
+to <code>.config/fish/conf.d/&lt;name&gt;.fish</code>.</p>
 <p>Those files are run before <code>.config/fish/config.fish</code> as per the fish
 <a href="https://fishshell.com/docs/current/language.html#configuration-files">documentation</a>.</p>
 </div>
@@ -1132,12 +1166,12 @@ to <code>.config/fish/conf.d/&amp;lt;name&amp;gt;.fish</code>.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>attribute set of (string or path)</code></div>
-  <div class="option-description"><p>A fish function which is being written to <code>.config/fish/functions/&amp;lt;name&amp;gt;.fish</code>.</p>
+  <div class="option-type">Type: <code>attribute set of (string or absolute path)</code></div>
+  <div class="option-description"><p>A fish function which is being written to <code>.config/fish/functions/&lt;name&gt;.fish</code>.</p>
 <p>If the input value is a string, its contents will be wrapped
 inside of a function declaration, like so:</p>
-<pre><code class="language-fish">    function &amp;lt;name&amp;gt;;
-        &amp;lt;function body&amp;gt;
+<pre><code class="language-fish">    function &lt;name&gt;;
+        &lt;function body&gt;
     end
 </code></pre><p>Otherwise you are expected to handle that yourself.</p>
 </div>
@@ -1145,10 +1179,10 @@ inside of a function declaration, like so:</p>
   <div class="option-example">Example: <pre><code>{
   fish_prompt = pkgs.writers.writeFish "fish_prompt.fish" '\'
       function fish_prompt -d "Write out the prompt"
-            # This shows up as USER@HOST /home/user/ >, with the directory colored
+            # This shows up as USER@HOST /home/user/ &gt;, with the directory colored
             # $USER and $hostname are set by fish, so you can just use them
             # instead of using `whoami` and `hostname`
-            printf '%s@%s %s%s%s > ' $USER $hostname \
+            printf '%s@%s %s%s%s &gt; ' $USER $hostname \
                 (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
       end
   '\';
@@ -1176,10 +1210,10 @@ inside of a function declaration, like so:</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>attribute set of path</code></div>
+  <div class="option-type">Type: <code>attribute set of absolute path</code></div>
   <div class="option-description"><p>An attrset of plugins.</p>
 <p>In the case where a plugin is a ‘vendored’ plugin, all we are doing is adding that
-plugin to <code>hjem.users.&amp;lt;name&amp;gt;.packages</code>. As fish automatically discovers those files.</p>
+plugin to <code>hjem.users.&lt;name&gt;.packages</code>. As fish automatically discovers those files.</p>
 <p>A vendored plugin is denoted by the existence of one of the following files in its derivation:</p>
 <ul>
 <li>/share/fish/vendor_conf.d</li>
@@ -1187,7 +1221,7 @@ plugin to <code>hjem.users.&amp;lt;name&amp;gt;.packages</code>. As fish automat
 <li>/share/fish/vendor_functions.d</li>
 </ul>
 <p>This will be the case with plugins present in <a href="options.html#option-pkgs-fishPlugins" class="option-reference"><code>pkgs.fishPlugins</code></a>.</p>
-<p>For the remaining cases, a file will be created at <code>~/.config/fish/conf.d/rum-plugin-&amp;lt;name&amp;gt;.fish</code>.
+<p>For the remaining cases, a file will be created at <code>~/.config/fish/conf.d/rum-plugin-&lt;name&gt;.fish</code>.
 It will attempt to handle or source a variety of expected files from the derivation. Those files are:</p>
 <ul>
 <li><code>/functions</code>: is added to <code>fish_function_path</code></li>
@@ -1215,7 +1249,7 @@ It will attempt to handle or source a variety of expected files from the derivat
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>null or string or path</code></div>
+  <div class="option-type">Type: <code>null or string or absolute path</code></div>
   <div class="option-description"><p>Your fish prompt, written to <code>.config/fish/functions/fish_prompt.fish</code>.
 It follows the behaviour of <a href="options.html#option-rum-programs-fish-functions" class="option-reference"><code>rum.programs.fish.functions</code></a>.</p>
 </div>
@@ -1736,7 +1770,7 @@ for config options.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>list of (package or path)</code></div>
+  <div class="option-type">Type: <code>list of (package or absolute path)</code></div>
   <div class="option-description"><p>List of Hyprland plugins to use. Can either be packages or
 absolute plugin paths.</p>
 </div>
@@ -2372,7 +2406,7 @@ for configuration options.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>attribute set of (string or path or boolean or signed integer or floating point number)</code></div>
+  <div class="option-type">Type: <code>attribute set of (string or absolute path or boolean or signed integer or floating point number)</code></div>
   <div class="option-description"><p>The configuration converted into “key = value” and written to
 <code class="file-path">$HOME/.config/tofi/config</code>.
 Please reference <a href="https://github.com/philj56/tofi/blob/master/doc/tofi.5.md" class="manpage-reference">tofi(5)</a>,
@@ -2514,7 +2548,7 @@ done at this level, for the sake of organization.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>list of path</code></div>
+  <div class="option-type">Type: <code>list of absolute path</code></div>
   <div class="option-description"><p>A list of completions that will be loaded into <code>fpath</code>.</p>
 </div>
   <div class="option-default">Default: <code>[ ]</code></div>
@@ -2539,7 +2573,7 @@ done at this level, for the sake of organization.</p>
     <span class="copy-link" title="Copy link to this option"></span>
     <span class="copy-feedback">Link copied!</span>
   </h3>
-  <div class="option-type">Type: <code>null or path</code></div>
+  <div class="option-type">Type: <code>null or absolute path</code></div>
   <div class="option-description"><p>Path to the plugin file to load.</p>
 </div>
   <div class="option-default">Default: <code>null</code></div>

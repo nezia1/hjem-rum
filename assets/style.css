@@ -66,7 +66,8 @@
     --link-color: #60a5fa;
     --link-hover-color: #93c5fd;
     --border-color: #334155;
-    --code-bg: #1e293b;
+    --code-bg: #111827;
+    --code-border: #2d3748;
     --header-bg: #0f172a;
     --header-text: #f8fafc;
     --sidebar-bg: #1e293b;
@@ -294,7 +295,8 @@ header {
   transition: transform var(--transition);
 }
 
-.sidebar-collapsed .sidebar {
+.sidebar-collapsed .sidebar,
+.sidebar-collapsed-init .sidebar {
   transform: translateX(-100%);
 }
 
@@ -329,11 +331,13 @@ header {
   transition: transform var(--transition);
 }
 
-.sidebar-collapsed .sidebar-toggle {
+.sidebar-collapsed .sidebar-toggle,
+.sidebar-collapsed-init .sidebar-toggle {
   left: 0;
 }
 
-.sidebar-collapsed .sidebar-toggle svg {
+.sidebar-collapsed .sidebar-toggle svg,
+.sidebar-collapsed-init .sidebar-toggle svg {
   transform: rotate(180deg);
 }
 
@@ -483,6 +487,7 @@ code {
   font-size: 0.875em;
   transition: background-color var(--transition);
   letter-spacing: -0.025em;
+  border: 1px solid var(--code-border);
 }
 
 pre {
@@ -504,6 +509,7 @@ pre code {
   padding: 0;
   border-radius: 0;
   font-size: 0.9em;
+  border: none;
 }
 
 pre:hover::before {
@@ -732,7 +738,7 @@ img {
   transition:
     transform var(--transition-fast),
     border-color var(--transition-fast),
-    box-shadow var(--transition-fast);
+    box-shadow var (--transition-fast);
 }
 
 .search-page-results .search-result-item:hover {
@@ -750,7 +756,7 @@ img {
 .search-page-results .search-result-title {
   font-size: 1.125rem;
   font-weight: 600;
-  margin-bottom: var(--space-3);
+  margin-bottom: var (--space-3);
   color: var(--heading-color);
 }
 
@@ -800,7 +806,7 @@ img {
     transform var(--transition-fast),
     color var(--transition-fast);
   font-size: 0.9375rem;
-  color: var(--text-color);
+  color: var (--text-color);
 }
 
 .toc-list a:hover {
@@ -855,7 +861,7 @@ img {
 }
 
 .admonition.warning {
-  border-top: 4px solid var(--admonition-warning-color);
+  border-top: 4px solid var (--admonition-warning-color);
 }
 
 .admonition.warning .admonition-title {
@@ -1111,7 +1117,7 @@ h6:hover .copy-link {
     top: 70px;
     left: 0;
     background-color: var(--header-bg);
-    color: var(--header-text);
+    color: var (--header-text);
     border-radius: 0 var(--radius-md) var(--radius-md) 0;
     padding: var(--space-2);
     width: 32px;
@@ -1388,7 +1394,7 @@ h6:hover .copy-link {
 }
 
 .option-type {
-  margin-bottom: var(--space-3);
+  margin-bottom: var (--space-3);
 }
 
 .option-description {
