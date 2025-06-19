@@ -5,12 +5,13 @@
   ...
 }: let
   inherit (lib.options) mkEnableOption mkOption mkPackageOption;
-  inherit (lib.modules) mkIf;
-  inherit (lib.types) enum lines;
+  inherit (lib.modules) mkIf mkRemovedOptionModule;
+  inherit (lib.types) lines;
 
   gitIni = pkgs.formats.gitIni {};
   cfg = config.rum.programs.git;
 in {
+  imports = [(mkRemovedOptionModule ["rum" "programs" "git" "destination"] "The default destination is now under `~/.config/git`")];
   options.rum.programs.git = {
     enable = mkEnableOption "git";
 
@@ -66,25 +67,13 @@ in {
         {file}`$HOME/.config/git/attributes`.
       '';
     };
-
-    destination = mkOption {
-      type = enum [
-        ".gitconfig"
-        ".config/git/config"
-      ];
-      default = ".gitconfig";
-      description = ''
-        Select your preferred git config location. Do note that options set in
-        {file}`$HOME/.gitconfig` will shadow anything set in `.config/git/config`.
-      '';
-    };
   };
 
   config = mkIf cfg.enable {
     packages = mkIf (cfg.package != null) [cfg.package];
     files = {
-      ${cfg.destination}.source = mkIf (cfg.settings != {}) (
-        gitIni.generate ".gitconfig" cfg.settings
+      ".config/git/config".source = mkIf (cfg.settings != {}) (
+        gitIni.generate "config" cfg.settings
       );
       ".config/git/ignore".text = mkIf (cfg.ignore != {}) cfg.ignore;
       ".config/git/attributes".text = mkIf (cfg.attributes != {}) cfg.attributes;
