@@ -20,6 +20,16 @@
           * text=auto
           *.md linguist-detectable=true
         '';
+        integrations = {
+          difftastic = {
+            enable = true;
+            flags = [
+              "--background light"
+              "--display inline"
+              "--ignore-comments"
+            ];
+          };
+        };
       };
     };
   };
@@ -42,6 +52,8 @@
     # Checks if the config files exist in the expected places with the expected config.
     for confFile in confFiles:
         machine.succeed(f"[ -r {confPath}/{confFile} ]")
+        stripPathRegex = r"/nix/store/[^[:space:]]+/([^/[:space:]]+)|/nix/store/\1"
+        machine.succeed(f"sed -i -E 's|{stripPathRegex}|g' %s" % f"{confPath}/{confFile}")
         machine.succeed(f"diff -u -Z -b -B {confPath}/{confFile} /home/bob/{confFile}")
 
     machine.succeed("su bob -c 'git init'")
