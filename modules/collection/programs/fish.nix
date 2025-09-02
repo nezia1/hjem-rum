@@ -187,7 +187,7 @@ in {
 
     xdg.config.files =
       {
-        "fish/config.fish".source = mkIf (cfg.config != "") (writeFish "config.fish" cfg.config);
+        "fish/config.fish".text = mkIf (cfg.config != "") cfg.config;
         "fish/conf.d/rum-environment-variables.fish".text = mkIf (env != {}) ''
           ${concatMapAttrsStringSep "\n" (name: value: "set --global --export ${name} ${toString value}") env}
         '';
